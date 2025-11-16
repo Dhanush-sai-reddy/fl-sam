@@ -5,5 +5,5 @@ pillow
 matplotlib
 opencv-python
 pycocotools
-flwr
+flwr[simulation]
 git+https://github.com/facebookresearch/segment-anything.git
