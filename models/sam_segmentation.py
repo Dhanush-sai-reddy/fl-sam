@@ -54,4 +54,3 @@ class SamBinarySegmenter(nn.Module):
     def trainable_parameters(self):
         """Return only parameters of the trainable head for optimization."""
         return self.head.parameters()
-
