@@ -1,11 +1,19 @@
 from typing import Dict, List
 
+import os
+import sys
+
 import torch
 from torch import nn
 from torch.utils.data import DataLoader, Subset
 
 import flwr as fl
 from segment_anything import sam_model_registry
+
+# Ensure project root is on sys.path so that `datasets` and `models` can be imported
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if PROJECT_ROOT not in sys.path:
+    sys.path.append(PROJECT_ROOT)
 
 from config import TrainConfig
 from datasets.coco_dataset import get_coco_binary_segmentation
