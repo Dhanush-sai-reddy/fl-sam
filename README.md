@@ -13,7 +13,7 @@ Federated **binary segmentation** on COCO 2017 using PyTorch, Flower, and the **
 1. **Clone the repo**
 
    ```bash
-   !git clone dhanush-sai-reddy/fl-sam
+   !git clone Dhanush-sai-reddy/fl-sam
    %cd fl-sam
    ```
 
